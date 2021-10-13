@@ -28,8 +28,8 @@ namespace CancionesWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDBContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DbContext")));
+            services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("MarceloContext")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
